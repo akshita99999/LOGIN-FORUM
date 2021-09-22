@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Realistic Virtual Piano</title>
+    <link rel="stylesheet" href="bts.css">
+<style>
+     body{
+       background-color: yellowgreen;
+   }
+   #heading9{
+      background-color: bisque;
+      font-size: 30px;
+      margin: 50px;
+      border-radius: 25px;
+   }
+   #changecolor{
+       margin:auto;
+       display: block;
+       background-color: bisque;
+       width:1500px;
+       height: 350px;
+       border-radius: 30px;
+       font-size: 90px;
+
+   }
+   .button{
+       cursor: pointer;
+   }
+</style>
+</head>
+<script>
+    function play1(){
+   var A1= new Audio("C4.mp3");
+   A1.play();
+    }
+    function play2(){
+   var A1= new Audio("D4.mp3");
+   A1.play();
+    }
+    function play3(){
+   var A1= new Audio("E4.mp3");
+   A1.play();
+    }
+    function play4(){
+   var A1= new Audio("F4.mp3");
+   A1.play();
+    }
+    function play5(){
+   var A1= new Audio("G4.mp3");
+   A1.play();
+    }
+    function play6(){
+   var A1= new Audio("A4.mp3");
+   A1.play();
+    }
+    function play7(){
+   var A1= new Audio("B4.mp3");
+   A1.play();
+    }
+    function play8(){
+   var A1= new Audio("C5.mp3");
+   A1.play();
+    }
+    function play9(){
+   var A1= new Audio("D5.mp3");
+   A1.play();
+    }
+    function play10(){
+   var A1= new Audio("E5.mp3");
+   A1.play();
+    }
+    function play11(){
+   var A1= new Audio("E1.wav");
+   A1.play();
+    }
+    function play12(){
+   var A1= new Audio("F1.wav");
+   A1.play();
+    }
+    function play13(){
+   var A1= new Audio("Db4.mp3");
+   A1.play();
+    }
+    function play14(){
+   var A1= new Audio("Eb4.mp3");
+   A1.play();
+    }
+    function play15(){
+   var A1= new Audio("Gb4.mp3");
+   A1.play();
+    }
+    function play16(){
+   var A1= new Audio("Ab4.mp3");
+   A1.play();
+    }
+    function play17(){
+   var A1= new Audio("Bb4.mp3");
+   A1.play();
+    }
+    function play18(){
+   var A1= new Audio("Db5.mp3");
+   A1.play();
+    }
+    function play19(){
+   var A1= new Audio("Eb5.mp3");
+   A1.play();
+    }
+    function play20(){
+   var A1= new Audio("Dq1_Drum.wav");
+   A1.play();
+    }
+</script>
+<script>
+    function func(){
+      let col = document.getElementById('colors').value;
+document.getElementById("changecolor").style.backgroundColor = col;
+    }
+</script>
+<body>
+    <div id="heading9" align="center">
+       <h1> A Realistic Virtual Piano</h1>
+    </div>
+<div align="center" id="mypiano"> <br><br>
+     <button class="C_Note" onclick="play1()"></button> 
+     <button class="D_Note" onclick="play2()"></button>
+     <button class="E_Note" onclick="play3()"></button>
+     <button class="F_Note" onclick="play4()"></button>
+     <button class="G_Note" onclick="play5()"></button>
+     <button class="A_Note" onclick="play6()"></button>
+     <button class="B_Note" onclick="play7()"></button>
+     <button class="C1_Note" onclick="play8()"></button> 
+     <button class="D1_Note" onclick="play9()"></button> 
+     <button class="E1_Note" onclick="play10()"></button> 
+     <button class="F1_Note" onclick="play11()"></button> 
+     <button class="G1_Note" onclick="play12()"></button>
+     <button class="Cs_Note" onclick="play13()"></button> 
+     <button class="Ds_Note" onclick="play14()"></button> 
+     <button class="Es_Note" onclick="play15()"></button>
+     <button class="Gs_Note" onclick="play16()"></button>
+     <button class="Bb_Note" onclick="play17()"></button>
+     <button class="Cs1_Note" onclick="play18()"></button>
+     <button class="Ds1_Note" onclick="play19()"></button>
+     <button class="Es1_Note" onclick="play20()"></button>
+    </div>  
+    <form id="changecolor" margin="auto" >
+        <label for="cars" style="color: red;">Choose a color:</label>
+        <select name="color" id="colors" onclick="func()" size="1px" style="font-size:35px;" >
+          <option value="pink">Pink</option>
+          <option value="black">Black</option>
+          <option value="orange">Orange</option>
+          <option value="darkblue">Darkblue</option>
+        </select>
+        <br><br>
+       </form>
+       <div><br><br><br><br><br><br>
+           <h1>Akshita</h1><br><br>
+           <h1>Thank You</h1>
+      </div>
+</body>
+</html>
